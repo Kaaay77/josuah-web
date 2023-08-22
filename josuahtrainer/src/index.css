@@ -12,3 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.prueba {
+  color: red;
+  font-size: 3rem;
+}
+p {
+  color: red;
+  font-size: 3rem;
+}
