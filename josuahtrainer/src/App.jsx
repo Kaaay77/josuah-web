@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import ReactPlayer from "react-player";
-import { FaInstagramSquare } from 'react-icons/fa';
+import { FaInstagramSquare } from "react-icons/fa";
 
 function App() {
   const [item1, setItem1] = useState(false);
@@ -53,15 +53,15 @@ function App() {
           <p className="titulo">FITTEST</p>
           <p className="subtitulo">FUERTE Y FUNCIONAL</p>
           <p className="subtitulo">
-              Membresía de entrenamiento <br /> para
-              <span> potenciar</span> tu desarollo.
+            Membresía de entrenamiento <br /> para
+            <span> potenciar</span> tu desarollo.
           </p>
           <h1>Entrenador personal online</h1>
         </div>
         <div className="btn-img">
           <a
-            className="btn btn-1"
-            href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
+            className="btn"
+            href="https://buy.stripe.com/14kdRb5x673McSIeUV"
             target="_blank"
           >
             UNIRME AHORA
@@ -81,7 +81,7 @@ function App() {
         </div>
         <a
           className="btn btn-3"
-          href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
+          href="https://buy.stripe.com/14kdRb5x673McSIeUV"
           target="_blank"
         >
           UNIRME AHORA
@@ -162,7 +162,7 @@ function App() {
         <div className="blok-btn">
           <a
             className="btn btn-2"
-            href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
+            href="https://buy.stripe.com/14kdRb5x673McSIeUV"
             target="_blank"
           >
             UNIRME AHORA
@@ -470,12 +470,11 @@ function App() {
           Contacto
         </a>
         <a
-        className="contacto"
+          className="contacto"
           href="https://www.instagram.com/josuahtrainer/"
           target="_blank"
         >
-
-        <FaInstagramSquare className="instagram-icon"/>
+          <FaInstagramSquare className="instagram-icon" />
         </a>
       </footer>
     </>
