@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import ReactPlayer from "react-player";
+import { FaInstagramSquare } from 'react-icons/fa';
 
 function App() {
   const [item1, setItem1] = useState(false);
@@ -39,18 +40,23 @@ function App() {
     <>
       <nav>
         <img src="../logo.png" alt="logo" className="logo-img"></img>
-        <p>Josuah Trainer</p>
+        <a
+          className="nombre"
+          href="https://www.instagram.com/josuahtrainer/"
+          target="_blank"
+        >
+          Josuah Trainer
+        </a>
       </nav>
       <div className="header">
         <div className="letras">
           <p className="titulo">FITTEST</p>
           <p className="subtitulo">FUERTE Y FUNCIONAL</p>
           <p className="subtitulo">
-            <strong>
               Membresía de entrenamiento <br /> para
               <span> potenciar</span> tu desarollo.
-            </strong>
           </p>
+          <h1>Entrenador personal online</h1>
         </div>
         <div className="btn-img">
           <a
@@ -63,52 +69,48 @@ function App() {
           <img src="../app-img.png" alt="app-foto" className="app-foto"></img>
         </div>
       </div>
-      <div className="video">
-        <ReactPlayer
-          url="https://youtu.be/SXFvm8fh0QI"
-          className="react-player"
-          playing
-          controls="true"
-        />
-      </div>
-      <section className="wrap">
-        <div className="productos">
-          <h2>¿POR QUÉ ENTRAR EN FITTEST?</h2>
-          <ul>
-            <li>🟡 DESARROLLA TU FUERZA.</li>
-            <li>🟡 MEJORA TU FUNCIONALIDAD.</li>
-            <li>🟡 REDUCE MOLESTIAS/DOLORES CORPORALES.</li>
-            <li>🟡 LLEVA TU CONDICIÓN FÍSICA AL SIGUIENTE NIVEL.</li>
-          </ul>
-
-          <a
-            className="btn btn-2"
-            href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
-            target="_blank"
-          >
-            UNIRME AHORA
-          </a>
+      <div className="v-center">
+        <div className="video">
+          <ReactPlayer
+            url="https://youtu.be/SXFvm8fh0QI"
+            className="react-player"
+            width="100%"
+            height="100%"
+            controls
+          />
         </div>
+        <a
+          className="btn btn-3"
+          href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
+          target="_blank"
+        >
+          UNIRME AHORA
+        </a>
+      </div>
+      <section>
+        <div className="wrap">
+          <div className="productos">
+            <h2 className="p-1">¿POR QUÉ ENTRAR EN FITTEST?</h2>
+            <ul>
+              <li>🟡 DESARROLLA TU FUERZA.</li>
+              <li>🟡 MEJORA TU FUNCIONALIDAD.</li>
+              <li>🟡 REDUCE MOLESTIAS/DOLORES CORPORALES.</li>
+              <li>🟡 LLEVA TU CONDICIÓN FÍSICA AL SIGUIENTE NIVEL.</li>
+            </ul>
+          </div>
 
-        <div className="productos">
-          <h2>¿CÓMO SE CONSIGUE?</h2>
-          <ul>
-            <li>✅ 6 ENTRENAMIENTOS NUEVOS CADA SEMANA.</li>
-            <li>✅ PERIODIZACIÓN DINÁMICA DEL ENTRENAMIENTO.</li>
-            <li>
-              ✅ EVOLUCIÓN CONSTANTE SEGÚN LA ÚLTIMA EVIDENCIA CIENTÍFICA.
-            </li>
-            <li>✅ REGISTRO COMPLETO DE LOS ENTRENAMIENTOS.</li>
-            <li>✅ SOPORTE POR CHAT.</li>
-          </ul>
-
-          <a
-            className="btn btn-2"
-            href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
-            target="_blank"
-          >
-            UNIRME AHORA
-          </a>
+          <div className="productos">
+            <h2>¿CÓMO SE CONSIGUE?</h2>
+            <ul>
+              <li>✅ 6 ENTRENAMIENTOS NUEVOS CADA SEMANA.</li>
+              <li>✅ PERIODIZACIÓN DINÁMICA DEL ENTRENAMIENTO.</li>
+              <li>
+                ✅ EVOLUCIÓN CONSTANTE SEGÚN LA ÚLTIMA EVIDENCIA CIENTÍFICA.
+              </li>
+              <li>✅ REGISTRO COMPLETO DE LOS ENTRENAMIENTOS.</li>
+              <li>✅ SOPORTE POR CHAT.</li>
+            </ul>
+          </div>
         </div>
       </section>
       <article>
@@ -156,6 +158,15 @@ function App() {
               estar.
             </p>
           </div>
+        </div>
+        <div className="blok-btn">
+          <a
+            className="btn btn-2"
+            href="https://buy.stripe.com/aEU28t9Nmbk27yoeUU"
+            target="_blank"
+          >
+            UNIRME AHORA
+          </a>
         </div>
       </article>
       <section className="faqs">
@@ -450,7 +461,23 @@ function App() {
           </div>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <a
+          className="contacto"
+          href="https://www.instagram.com/josuahtrainer/"
+          target="_blank"
+        >
+          Contacto
+        </a>
+        <a
+        className="contacto"
+          href="https://www.instagram.com/josuahtrainer/"
+          target="_blank"
+        >
+
+        <FaInstagramSquare className="instagram-icon"/>
+        </a>
+      </footer>
     </>
   );
 }

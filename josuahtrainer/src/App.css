@@ -12,12 +12,14 @@ nav {
 span {
   color: #fce103;
 }
-nav > p {
+nav > .nombre {
+  text-decoration: none;
   color: #000;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 800;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .header {
   background-color: #000;
@@ -47,8 +49,17 @@ nav > p {
   margin-bottom: 10px;
 }
 .subtitulo {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 3rem;
+}
+h1{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: -1rem;
+  padding-bottom: 1rem;
 }
 .letras {
   width: 100%;
@@ -68,6 +79,7 @@ nav > p {
 }
 .btn {
   text-decoration: none;
+  font-size: 20px;
   color: #000;
   font-weight: 800;
   background-color: #fce103;
@@ -80,14 +92,29 @@ nav > p {
   margin: 2rem 0 4rem 0;
 }
 .video {
-  margin-top: 12rem;
+  height: 201px;
+  width: 358px;
+  position: absolute;
+}
+.v-center {
+  margin: 10rem 0 16rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.btn-3 {
+  position: absolute;
+  margin-top: 14rem;
 }
 
+.wrap {
+  margin-top: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 3rem 0;
+}
 .productos {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,11 +126,10 @@ li {
 }
 .productos > h2 {
   font-weight: 900;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   text-align: center;
   letter-spacing: 2px;
 }
+
 
 ul {
   list-style: none;
@@ -118,6 +144,8 @@ ul {
   border: #fce103 2px solid;
   border-radius: 20px;
   box-shadow: 0px 0px 10px #000;
+}
+ul >li {
 }
 
 .articulos {
@@ -134,14 +162,14 @@ ul {
   height: 260px;
 }
 .art-2 {
-  background-image: url(../estiramiento.jpeg);
-  background-position: center;
+  background-image: url(../ejercicio.jpeg);
+  background-position-y: -1rem;
   background-size: 100%;
   background-repeat: no-repeat;
   height: 260px;
 }
 .art-3 {
-  background-image: url(../ejercicio.jpeg);
+  background-image: url(../estiramiento.jpeg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -160,6 +188,7 @@ ul {
 }
 .a-text h3 {
   font-weight: 900;
+  font-size: 25px;
   letter-spacing: 1px;
 }
 .a-text p {
@@ -167,6 +196,17 @@ ul {
 }
 .borde-amarillo {
   border-bottom: 5px solid #fce103;
+}
+.blok-btn-w {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.blok-btn {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
 }
 .faqs {
   background-color: #000;
@@ -176,8 +216,9 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 2rem;
 }
-.faqs h2 {
+.faqs  h2 {
   margin: 3rem 0 2rem 0;
 }
 .faq {
@@ -207,6 +248,25 @@ ul {
 .rotate {
   transform: rotate(180deg);
 }
+footer{
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.contacto{
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.instagram-icon{
+width: 2rem;
+height: 2rem;
+color: #000;
+}
 
 @media (max-width: 780px) {
   .grid-box {
@@ -221,6 +281,28 @@ ul {
 }
 
 @media (min-width: 780px) {
+  .btn {
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 25px;
+  }
+  .video {
+    width: 748px;
+    height: 421px;
+  }
+  .btn-3 {
+    margin-top: 28rem;
+  }
+  .v-center {
+    height: 15rem;
+  }
+  .faqs{
+    padding-bottom: 4rem;
+  }
+  .faqs  h2 {
+font-size: 35px;  
+letter-spacing: 2px;
+}
   .question {
     width: 500px;
   }
@@ -228,6 +310,16 @@ ul {
     width: 450px;
   }
   .answer p {
+    width: 500px;
+  }
+}
+@media (min-width: 1010px) {
+  .wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .wrap .productos{
     width: 500px;
   }
 }
